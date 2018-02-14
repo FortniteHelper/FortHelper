@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="FortHelper.PerkLvlPicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FortHelper"
+             x:Name="ThisLevlPicker">
+    <UserControl.Resources>
+        <local:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
+    </UserControl.Resources>
+    <ComboBox x:Name="Picker" 
+              SelectedValue="{Binding ElementName=ThisLevlPicker, Path=SelectedColor}" 
+              SnapsToDevicePixels="True"
+              Style="{StaticResource FortniteComboBox}">
+        <ComboBox.ItemTemplate>
+            <DataTemplate>
+                <Rectangle Width="16" Height="16" Stroke="Black" HorizontalAlignment="Center"
+                    Fill="{Binding Converter={StaticResource ColorToBrushConverter}}" Margin="0 1 0 1"/>
+            </DataTemplate>
+        </ComboBox.ItemTemplate>
+        <ComboBox.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapPanel Margin="0 2 0 2"/>
+            </ItemsPanelTemplate>
+        </ComboBox.ItemsPanel>
+    </ComboBox>
+</UserControl>

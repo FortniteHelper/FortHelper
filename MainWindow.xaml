@@ -1,0 +1,29 @@
+﻿<Window x:Name="WinFortHelper" x:Class="FortHelper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FortHelper"
+        mc:Ignorable="d"
+        Title="FortHelper" Height="370" Width="540">
+    <Grid x:Name="gridBackground">
+        <Grid.Background>
+            <RadialGradientBrush GradientOrigin="0.3,0.1" Center="0.3,0.1" RadiusX="1.2" RadiusY="1.2">
+                <GradientStop Color="#FF233C77" Offset="1"/>
+                <GradientStop Color="#FFABCAD8" Offset="0.063"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="290*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="cmdDPS" Content="DPS" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="98" Height="208" Grid.Row="1" Click="cmdDPS_Click" FontSize="24"/>
+        <Button Content="Inventory" HorizontalAlignment="Left" Margin="113,35,0,0" VerticalAlignment="Top" Width="98" Height="208" Grid.Row="1" IsEnabled="False"/>
+        <Button Content="Heroes" HorizontalAlignment="Left" Margin="216,35,0,0" VerticalAlignment="Top" Width="98" Height="208" Grid.Row="1" IsEnabled="False"/>
+        <Button Content="Survivor" HorizontalAlignment="Left" Margin="319,35,0,0" VerticalAlignment="Top" Width="98" Height="208" Grid.Row="1" IsEnabled="False"/>
+        <Button Content="Husks" HorizontalAlignment="Left" Margin="422,35,0,0" VerticalAlignment="Top" Width="98" Height="208" Grid.Row="1" IsEnabled="False"/>
+        <Grid x:Name="griTopLane" Background="#FF1C2238"/>
+        <Grid x:Name="griBotLane" Grid.Row="2" Background="#FF1C2238"/>
+    </Grid>
+</Window>

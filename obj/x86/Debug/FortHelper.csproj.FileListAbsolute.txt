@@ -1,0 +1,42 @@
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\bin\x86\Debug\FortHelper.exe.config
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\bin\x86\Debug\FortHelper.exe
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\bin\x86\Debug\FortHelper.pdb
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\PerkLvlPicker.g.cs
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\WinDPS.g.cs
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\MainWindow.g.cs
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\App.g.cs
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper_MarkupCompile.cache
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper_MarkupCompile.lref
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\App.baml
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\PerkLvlPicker.baml
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\WinDPS.baml
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\MainWindow.baml
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.g.resources
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.Properties.Resources.resources
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csproj.GenerateResource.Cache
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csproj.CoreCompileInputs.cache
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.exe
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.pdb
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csprojResolveAssemblyReference.cache
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\FortHelper.exe.config
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\FortHelper.exe
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\FortHelper.pdb
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csprojResolveAssemblyReference.cache
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\PerkLvlPicker.g.cs
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\WinDPS.g.cs
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\App.g.cs
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper_MarkupCompile.cache
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper_MarkupCompile.lref
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\App.baml
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\PerkLvlPicker.baml
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\WinDPS.baml
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\MainWindow.baml
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper.g.resources
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper.Properties.Resources.resources
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csproj.GenerateResource.Cache
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csproj.CoreCompileInputs.cache
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper.exe
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper.pdb
