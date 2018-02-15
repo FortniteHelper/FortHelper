@@ -14,10 +14,12 @@ A easy to use Application to Calculator your DPS, manage your inventory and Info
 
 # Manual #
 In 3 Steps to your DPS:
+
 Step 1: Choose your weapon
+
 Step 2: Choose your Perk Level
+
 Step 3: Choose your Perks
-![img](https://imgur.com/a/Kjg4C)
 
 # Download and install #
 You don´t need a install! Download only the release folder and start FortHelper.exe
