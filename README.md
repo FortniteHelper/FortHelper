@@ -10,7 +10,7 @@ An easy to use Application to Calculator your DPS, manage your inventory and Inf
 - Calculate 3 Weapon at the same time.
 - A Ranking System for weapons with perks.
 - Save your Weapon and manage your items with import and export functions.
-- Calculate the dps for every available hero.
+- Calculate the DPS for every available hero.
 
 # Manual #
 In 3 Steps to your DPS:
