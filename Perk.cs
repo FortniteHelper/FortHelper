@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FortHelper
 {
-    public enum PerkQuality { Common, Rare, Legendary, OnlyOneValue}
+    public enum PerkQuality { Common, Rare, Legendary, OnlyOneValue, Nothing}
 
     public class Perk
     {
@@ -35,13 +35,17 @@ namespace FortHelper
                 Name = "All";
                 DMG = 10 + (iQuality * 5);
                 CHC = 14 + (iQuality * 7);
-                CHD = 30 + (iQuality * 15);
+                //CHD = 30 + (iQuality * 15); Patch3.2 change
+                CHD = 45 + (iQuality * 22.5d);
                 Headshot = 13.3d + (iQuality * 6.7d);
-                FireRate = 12 + (iQuality * 6);
-                MagSize = 30 + (iQuality * 15);
-                Reload = 15 + (iQuality * 7.5d);
+                //FireRate = 12 + (iQuality * 6); Patch3.2 change
+                FireRate = 14 + (iQuality * 7);
+                //MagSize = 30 + (iQuality * 15); Patch3.2 change
+                MagSize = 25 + (iQuality * 13) - (4 % (iQuality + 1));
+                //Reload = 15 + (iQuality * 7.5d); Patch3.2 change
+                Reload = 25 + (iQuality * 13) - (4 % (iQuality+1));
                 Recoil = 20 + (iQuality * 10);
-                Durability = 7 + (iQuality * 5);
+                Durability = 14 + (iQuality * 7);
                 DMGRequirement = 15 + (iQuality * 7.5d);
                 DMGElement = 10;
                 DMGType = "Physically";
@@ -61,7 +65,7 @@ namespace FortHelper
             lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+{FireRate}% Fire Rate", FireRate = this.FireRate });
             lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+{MagSize}% Magazine Size", MagSize = this.MagSize });
             lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+{Reload}% Reload Speed", Reload = this.Reload });
-            lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"-{Recoil}% Recoil", Recoil = this.Recoil });
+            lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+{Recoil}% Weapon Stability", Recoil = this.Recoil });
             lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+{Durability}% Longer Durability", Durability = this.Durability });
 
             //Perk with Requirement
@@ -79,11 +83,13 @@ namespace FortHelper
                     lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+10% Weapon Damage (Fire)", DMGElement = this.DMGElement, DMGType = "Fire"});
                     lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+10% Weapon Damage (Water)", DMGElement = this.DMGElement, DMGType = "Water" });
                     lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+10% Weapon Damage (Nature)", DMGElement = this.DMGElement, DMGType = "Nature" });
+                    lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+10% Weapon Damage (Energy)", DMGElement = this.DMGElement, DMGType = "Energy" });
                     break;
                 case PerkQuality.Legendary:
                     lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+10% Weapon Damage (Fire). Causes Affliction damage for 6 seconds.", DMGElement = this.DMGElement, DMGType = "Fire" });
                     lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+10% Weapon Damage (Water). Causes Affliction damage for 6 seconds.", DMGElement = this.DMGElement, DMGType = "Water" });
                     lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+10% Weapon Damage (Nature). Causes Affliction damage for 6 seconds.", DMGElement = this.DMGElement, DMGType = "Nature" });
+                    lpPerkList.Add(new Perk(PerkQuality.OnlyOneValue) { Name = $"+10% Weapon Damage (Energy). Causes Affliction damage for 6 seconds.", DMGElement = this.DMGElement, DMGType = "Energy" });
                     break;
             }
 

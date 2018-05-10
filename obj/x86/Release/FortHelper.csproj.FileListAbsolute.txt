@@ -2,7 +2,6 @@ C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Release\FortHelper.e
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Release\FortHelper.exe
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Release\FortHelper.pdb
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Release\System.Data.SQLite.dll
-C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Release\FortHelper.csprojResolveAssemblyReference.cache
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Release\PerkLvlPicker.g.cs
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Release\WinDPS.g.cs
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Release\MainWindow.g.cs
@@ -20,3 +19,6 @@ C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Release\FortHelper.c
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Release\FortHelper.csproj.CoreCompileInputs.cache
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Release\FortHelper.exe
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Release\FortHelper.pdb
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Release\HtmlAgilityPack.dll
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Release\HtmlAgilityPack.pdb
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Release\HtmlAgilityPack.xml

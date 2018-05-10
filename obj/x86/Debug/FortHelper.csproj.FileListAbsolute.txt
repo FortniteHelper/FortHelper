@@ -19,9 +19,16 @@ C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\
 C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.exe
 C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.pdb
 C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csprojResolveAssemblyReference.cache
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csproj.CopyComplete
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\bin\x86\Debug\HtmlAgilityPack.dll
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\bin\x86\Debug\HtmlAgilityPack.pdb
+C:\Users\kuchta\Documents\Visual Studio 2017\Projects\FortHelper\FortHelper\bin\x86\Debug\HtmlAgilityPack.xml
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\FortHelper.exe.config
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\FortHelper.exe
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\FortHelper.pdb
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\HtmlAgilityPack.dll
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\HtmlAgilityPack.pdb
+C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\bin\x86\Debug\HtmlAgilityPack.xml
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\FortHelper.csprojResolveAssemblyReference.cache
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\PerkLvlPicker.g.cs
 C:\Users\Jeffrey\source\repos\FortHelper\FortHelper\obj\x86\Debug\WinDPS.g.cs

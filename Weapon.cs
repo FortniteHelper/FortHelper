@@ -24,6 +24,7 @@ namespace FortHelper
         public double Impact { get; set; }
         public string DamageType { get; set; }
         public string WeaponType { get; set; }
+        public bool bShadowshart { get; set; }
 
         public Weapon(DataRow drWeapon)
         {
@@ -42,6 +43,7 @@ namespace FortHelper
             Impact = Convert.ToDouble(drWeapon[13]);
             DamageType = drWeapon[14].ToString();
             WeaponType = drWeapon[15].ToString();
+            bShadowshart = false;
         }
     }
 }

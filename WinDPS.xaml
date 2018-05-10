@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FortHelper"
         mc:Ignorable="d"
-        Title="DPS" Height="893.5" Width="490.667">
+        Title="DPS" Height="893.5" Width="1627.667">
     <Window.Resources>
         <Color x:Key="QualityColor" A="255" R="200" G="100" B="0"/>
         <Color x:Key="QualityDarkColor" A="255" R="160" G="80" B="50"/>
@@ -155,9 +155,74 @@
                         </DataGridTextColumn>
                     </DataGrid.Columns>
                 </DataGrid>
+                <CheckBox x:Name="chbShadow" Content="Crystal Weapon" Margin="317,0,0,1" Grid.Row="2" Click="chbShadow_Click" FontSize="16" Padding="0, -4, 0, 0" VerticalAlignment="Center"/>
             </Grid>
         </Border>
         <Grid x:Name="griTopLane" Background="#FF1C2238" Grid.ColumnSpan="2"/>
         <Grid x:Name="griBotLane" Grid.Row="2" Background="#FF1C2238" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="dgvInventory" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="337" Margin="469,38,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1141" SelectionChanged="dgvInventory_SelectionChanged" RowBackground="{StaticResource FortniteLightBlue}" Foreground="White" Background="{DynamicResource FortniteBlue}" BorderBrush="{DynamicResource FortniteBlue}" HorizontalGridLinesBrush="{StaticResource FortniteBlue}" HeadersVisibility="Column">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding sWeapon}" Foreground="LightGray" Width="110" Header="Weapon">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Style.Triggers>
+                                <Trigger Property="Text" Value="Siegebreaker">
+                                    <Setter Property="Background" Value="{StaticResource FortniteOrange}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding sPerk1}" Width="200" Header="Perk1">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding sPerk2}" Width="200" Header="Perk2">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding sPerk3}" Width="200" Header="Perk3">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding sPerk4}" Width="200" Header="Perk4">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding sPerk5}" Width="200" Header="Perk5">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="BorderThickness" Value="0,0,0,3"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource FortniteBlue}"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="{StaticResource FortniteBlue}"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="564,735,0,0" Grid.Row="1" Width="76" Height="20" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="txtPlayer" HorizontalAlignment="Left" Height="23" Margin="469,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="EPIC username" VerticalAlignment="Top" Width="141" GotFocus="ValueText_GotFocus"/>
+        <Button x:Name="butLoad" Content="Load" HorizontalAlignment="Left" Margin="615,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="23" Click="butLoad_Click"/>
     </Grid>
 </Window>

@@ -1,5 +1,5 @@
 # What is FortHelper #
-A easy to use Application to Calculator your DPS, manage your inventory and Information about Husks.
+An easy to use Application to Calculator your DPS, manage your inventory and Information about Husks.
 
 # Current Function #
 - Calculator the DPS from a Weapon with Perks vs. different Element.
@@ -7,10 +7,10 @@ A easy to use Application to Calculator your DPS, manage your inventory and Info
 # Upcoming Function #
 - Weapon scaling.
 - Melee Weapon incoming.
-- Calculator 3 Weapon at the same time.
+- Calculate 3 Weapon at the same time.
 - A Ranking System for weapons with perks.
 - Save your Weapon and manage your items with import and export functions.
-- Calculate the Heroes in the DPS.
+- Calculate the DPS for every available hero.
 
 # Manual #
 In 3 Steps to your DPS:
@@ -25,5 +25,5 @@ Step 3: Choose your Perks
 You don´t need a install! Download only the release folder and start FortHelper.exe
 
 # Support me #
-1. [Report bugs] (Link) that you found.
+1. [Report bugs] (https://github.com/FortniteHelper/FortHelper/issues) that you found.
 2. Suggest improvements.

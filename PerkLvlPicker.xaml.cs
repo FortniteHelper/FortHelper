@@ -28,9 +28,12 @@ namespace FortHelper
             DependencyProperty.Register("SelectedColor", typeof(Color), typeof(PerkLvlPicker),
             new FrameworkPropertyMetadata(OnSelectedColorChanged));
 
-        public Perk SelectedPerkQuality
+        public PerkQuality SelectedPerkQuality
         {
-            get { return (Perk)GetValue(SelectedPerkQualityProperty); }
+            get
+            {
+                return (PerkQuality)GetValue(SelectedPerkQualityProperty);
+            }
             set
             {
                 SetValue(SelectedPerkQualityProperty, value);
@@ -38,14 +41,15 @@ namespace FortHelper
         }
 
         public static readonly DependencyProperty SelectedPerkQualityProperty =
-            DependencyProperty.Register("SelectedPerkQuality", typeof(Perk), typeof(PerkLvlPicker),
-            new FrameworkPropertyMetadata(OnSelectedColorChanged));
+            DependencyProperty.Register("SelectedPerkQuality", typeof(PerkQuality), typeof(PerkLvlPicker),
+            new FrameworkPropertyMetadata(OnSelectedPerkQualityChange));
 
         public static void OnSelectedPerkQualityChange(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            PerkLvlPicker cp = (PerkLvlPicker)obj;
-            Perk newPerk = (Perk)args.NewValue;
-            Debug.WriteLine(newPerk.Name);
+            PerkLvlPicker cp = obj as PerkLvlPicker;
+            PerkQuality newPerk = (PerkQuality)args.NewValue;
+            cp.SelectedPerkQuality = newPerk;
+            //Debug.WriteLine(newPerk.Name);
         }
 
         private static void OnSelectedColorChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
@@ -70,8 +74,20 @@ namespace FortHelper
             // Also update the brush
             cp.SelectedBrush = new SolidColorBrush(newColor);
 
-            cp.OnColorChanged(oldColor, newColor);
+            if(newColor == (Color)Colors.LightGray)
+            {
+                cp.SelectedPerkQuality = PerkQuality.Common;
+            }
+            else if (newColor == (Color)Colors.DodgerBlue)
+            {
+                cp.SelectedPerkQuality = PerkQuality.Rare;
+            }
+            else if (newColor == (Color)Colors.DarkOrange)
+            {
+                cp.SelectedPerkQuality = PerkQuality.Legendary;
+            }
 
+            cp.OnColorChanged(oldColor, newColor);
         }
 
         public Brush SelectedBrush

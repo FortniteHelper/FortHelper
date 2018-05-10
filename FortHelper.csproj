@@ -57,6 +57,9 @@
     <ApplicationIcon>Resources\FortHelper.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.8.1.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.1\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -98,10 +101,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BisPerks.cs" />
     <Compile Include="ColorQuality.cs" />
     <Compile Include="DBWeapons.cs" />
     <Compile Include="DPS.cs" />
     <Compile Include="DPSValue.cs" />
+    <Compile Include="LoadWeaponWebsite.cs" />
     <Compile Include="Perk.cs" />
     <Compile Include="PerkLvlPicker.xaml.cs">
       <DependentUpon>PerkLvlPicker.xaml</DependentUpon>
@@ -135,6 +140,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

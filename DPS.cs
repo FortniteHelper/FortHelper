@@ -31,11 +31,20 @@ namespace FortHelper
         {
             if (myPerk != null)
             {
+                double iDmgShadowshart = 0;
+                double iFirerateShadowshart = 0;
+                if (myWeapon.bShadowshart)
+                {
+                    iDmgShadowshart = 20d;
+                    iFirerateShadowshart = -10d;
+                }
+
                 //Set all Bonus.
                 int iTime = 60;
+                //myWeapon.Headshot = 50;
                 double ShootMag = Math.Floor(myWeapon.MagSize * (1 + (myPerk.MagSize / 100d)) / myWeapon.Ammo);
-                double DMGMulti = 1 + ((myPerk.DMG + myPerk.DMGRequirement + myPerk.DMGElement) / 100d);
-                double FireRate = myWeapon.FireRate * (1 + (myPerk.FireRate / 100d));
+                double DMGMulti = 1 + ((myPerk.DMG + myPerk.DMGRequirement + myPerk.DMGElement + iDmgShadowshart) / 100d);
+                double FireRate = myWeapon.FireRate * (1 + ((myPerk.FireRate + iFirerateShadowshart) / 100d));
                 double Reload = myWeapon.Reload / (1 + (myPerk.Reload / 100D));
                 double HeadShoot = 1 + ((myWeapon.Headshot + myPerk.Headshot) / 100d);
                 double CHC = (myWeapon.CHC + myPerk.CHC) / 100d;
@@ -45,10 +54,23 @@ namespace FortHelper
 
                 //Calc DPS with no Element.
                 double dps = iTime / (ShootMag / FireRate + Reload) * (ShootMag * myWeapon.DMG) / iTime;
+                dps = (ShootMag * myWeapon.DMG) / (ShootMag / FireRate + Reload);
+                //double dpsWithMulti = dps * DMGMulti * (HeadShoot * (1 + CHC * CHD));
                 double dpsWithMulti = dps * DMGMulti * (HeadShoot + (CHC * CHD));
 
                 //Calc DPS with Element.    
                 //DPSElement(Math.Round(dpsWithMulti, 2), myWeapon.DamageType, myPerk.DMGType);
+
+                //DPS TEST
+                // Final Damage = Base Damage
+                //* (1 + (Evolutions - 1) * 0.2)
+                //* (1 + (Weapon Level - 1 ) *0.05)  
+                //* (1 + Perk Damage + Hero Perk Damage)  
+                //* (1 + Offense / 100)
+                //* Damage difference due to elements
+                double FinalDPS = myWeapon.DMG
+                                  * (1 + (1 - 1) * 0.2)
+                                  * (1 + (2 - 1) * 0.05);
 
                 return Math.Round(dpsWithMulti, 2);
             }
